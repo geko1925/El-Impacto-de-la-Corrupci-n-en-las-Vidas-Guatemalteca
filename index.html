@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Impacto de la Corrupción en Guatemala</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>El Impacto de la Corrupción en las Vidas Guatemaltecas</h1>
+</header>
+
+<nav>
+  <button onclick="showSection('inicio')">Inicio</button>
+  <button onclick="showSection('preguntas')">Preguntas</button>
+  <button onclick="showSection('comentarios')">Comentarios</button>
+  <button onclick="showSection('estadisticas')">Estadísticas</button>
+</nav>
+
+<main>
+  <section id="inicio" class="active">
+    <h2>¿Qué es la corrupción?</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">La corrupción es el abuso del poder para beneficio personal. En Guatemala, afecta directamente la calidad de vida de la población, impidiendo el desarrollo social y económico.</p>
+
+    <div class="impacto">
+      <h3>Educación afectada</h3>
+      <p>Escuelas sin recursos, falta de materiales y condiciones indignas para los estudiantes y maestros.</p>
+      <img src="https://th.bing.com/th/id/OIP.9GiXXjv8n--MAJG1MjYK5wHaEK?rs=1&pid=ImgDetMain" alt="Educación en Guatemala">
+    </div>
+
+    <div class="impacto">
+      <h3>Salud colapsada</h3>
+      <p>Hospitales con carencias extremas, sin medicamentos, personal médico o equipos básicos.</p>
+      <img src="https://th.bing.com/th/id/OIP.WXnSX0UFILs7tA1G6xKegwHaEY?rs=1&pid=ImgDetMain" alt="Salud en crisis">
+    </div>
+
+    <div class="impacto">
+      <h3>Calles en abandono</h3>
+      <p>Infraestructura descuidada, obras inconclusas y servicios públicos deteriorados.</p>
+      <img src="https://th.bing.com/th/id/OIP.px0T1u8nTsZ9b_Jb9JajRQHaE8?rs=1&pid=ImgDetMain" alt="Calles abandonadas">
+    </div>
+  </section>
+
+  <section id="estadisticas">
+    <h2>Estadísticas de Corrupción</h2>
+    <div class="statistics">
+      <canvas id="corrupcionChart"></canvas>
+    </div>
+  </section>
+
+  <section id="preguntas">
+    <h2>Preguntas para Reflexionar</h2>
+    <div class="question-block">
+      <h3>¿Cómo ha afectado la corrupción a tu comunidad?</h3>
+      <textarea placeholder="Describe tu experiencia..."></textarea>
+    </div>
+
+    <div class="question-block">
+      <h3>¿Qué soluciones propones?</h3>
+      <textarea placeholder="Comparte tus ideas para mejorar el país..."></textarea>
+    </div>
+
+    <div class="question-block">
+      <h3>¿Crees que los jóvenes pueden cambiar el sistema?</h3>
+      <textarea placeholder="Déjanos tu opinión..."></textarea>
+    </div>
+
+    <button onclick="guardarRespuestas()">Enviar Respuestas</button>
+    <p id="respuestaGuardada" style="color: green; display: none; margin-top: 1rem;">Respuestas guardadas (simulado)</p>
+  </section>
+
+  <section id="comentarios">
+    <h2>Comparte tu experiencia</h2>
+    <div class="comment-box">
+      <textarea id="userComment" placeholder="Escribe tu comentario..."></textarea><br>
+      <input type="file" id="userImage"><br>
+      <button onclick="addComment()">Publicar</button>
+    </div>
+    <div id="commentsList"></div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 - Proyecto Educativo sobre Corrupción en Guatemala. Desarrollado con fines educativos.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

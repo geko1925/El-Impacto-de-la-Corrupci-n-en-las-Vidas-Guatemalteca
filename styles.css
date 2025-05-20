@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fefae0;
+    color: #333;
+  }
+  
+  header {
+    background: linear-gradient(90deg, #283618, #606c38);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  
+  nav {
+    background: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav button {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 1rem 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  nav button:hover {
+    background: #343434;
+  }
+  
+  section {
+    display: none;
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  section.active {
+    display: block;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #283618;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .impacto, .question-block, .comment-box {
+    background: white;
+    border-left: 6px solid #606c38;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  }
+  
+  .impacto h3 {
+    margin-top: 0;
+    color: #283618;
+  }
+  
+  .impacto img {
+    width: 80%;
+    max-width: 400px;
+    display: block;
+    margin: 1rem auto 0 auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .impacto img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+  .statistics {
+    background: #e3e3e3;
+    border-left: 6px solid #1c1c1c;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    margin-bottom: 3rem;
+  }
+  
+  canvas {
+    width: 100% !important;
+    max-width: 700px;
+    margin: auto;
+    display: block;
+  }
+  
+  textarea {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    min-height: 120px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .comment-box input[type="file"] {
+    margin-top: 1rem;
+  }
+  
+  .comment {
+    background: #eeeeee;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .comment img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+  }
+  
+  button {
+    background: #283618;
+    color: white;
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: #1d2a12;
+    transform: translateY(-2px);
+  }
+  
+  footer {
+    background: #212121;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
