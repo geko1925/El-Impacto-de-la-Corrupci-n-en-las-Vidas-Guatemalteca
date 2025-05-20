@@ -1,0 +1,2 @@
+# El-Impacto-de-la-Corrupci-n-en-las-Vidas-Guatemalteca
+Este análisis expone cómo la corrupción afecta directamente el bienestar de la población guatemalteca, deteriorando servicios esenciales como la salud, la educación y la justicia. A través de datos, testimonios y ejemplos concretos, se revela cómo la falta de transparencia y la impunidad profundizan la desigualdad y frenan el desarrollo del país
